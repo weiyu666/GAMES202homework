@@ -1,0 +1,71 @@
+# unity3d Wavefront OBJ Exporter
+newmtl bottom
+    Ns 0.01372549
+    Ni 1.5
+    d 1
+    Tr 1
+    Tf 1 1 1
+    illum 2
+    Ka 0 0 0
+    Kd 0.64 0.64 0.64
+    Ks 0.007937 0.007937 0.007937
+newmtl up
+    Ns 0.01372549
+    Ni 1.5
+    d 1
+    Tr 1
+    Tf 1 1 1
+    illum 2
+    Ka 0 0 0
+    Kd 0.64 0.64 0.64
+    Ks 0.007937 0.007937 0.007937
+    map_Ka rock_up.jpg
+    map_Kd rock_up.jpg
+newmtl 180
+    Ns 0.01372549
+    Ni 1.5
+    d 1
+    Tr 1
+    Tf 1 1 1
+    illum 2
+    Ka 0 0 0
+    Kd 0.64 0.64 0.64
+    Ks 0.007937 0.007937 0.007937
+    map_Ka rock_180.jpg
+    map_Kd rock_180.jpg
+newmtl 270
+    Ns 0.01372549
+    Ni 1.5
+    d 1
+    Tr 1
+    Tf 1 1 1
+    illum 2
+    Ka 0 0 0
+    Kd 0.64 0.64 0.64
+    Ks 0.007937 0.007937 0.007937
+    map_Ka rock_270.jpg
+    map_Kd rock_270.jpg
+newmtl 0
+    Ns 0.01372549
+    Ni 1.5
+    d 1
+    Tr 1
+    Tf 1 1 1
+    illum 2
+    Ka 0 0 0
+    Kd 0.64 0.64 0.64
+    Ks 0.007937 0.007937 0.007937
+    map_Ka rock_0.jpg
+    map_Kd rock_0.jpg
+newmtl 90
+    Ns 0.01372549
+    Ni 1.5
+    d 1
+    Tr 1
+    Tf 1 1 1
+    illum 2
+    Ka 0 0 0
+    Kd 0.64 0.64 0.64
+    Ks 0.007937 0.007937 0.007937
+    map_Ka rock_90.jpg
+    map_Kd rock_90.jpg

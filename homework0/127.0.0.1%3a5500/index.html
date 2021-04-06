@@ -1,0 +1,83 @@
+<!--
+WebGL Water
+http://madebyevan.com/webgl-water/
+
+Copyright 2011 Evan Wallace
+Released under the MIT license
+-->
+
+<!DOCTYPE html>
+<html><head>
+  <title>WebGL Water</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <script src="OES_texture_float_linear-polyfill.js"></script>
+  <script src="lightgl.js"></script>
+  <script src="cubemap.js"></script>
+  <script src="renderer.js"></script>
+  <script src="water.js"></script>
+  <script src="main.js"></script>
+  <style type="text/css">
+    body {font: 13px/140% Arial, sans-serif;background: black;color: #7c5656;overflow: hidden;}
+    a { color: inherit; cursor: pointer; }
+    img { display: none; }
+    ul { padding: 0 0 0 20px; }
+    h1 { font: bold italic 30px/30px Georgia; text-align: center; }
+    h2 { font: bold italic 17px/17px Georgia; padding-top: 10px; }
+    small { display: block; font-size: 11px; line-height: 15px; }
+    canvas { position: absolute; top: 0; left: 0; }
+    #help { position: absolute; top: 0; right: 0; bottom: 0; width: 280px; padding-right: 20px; overflow: auto; }
+    #loading {position: absolute;left: 0;top: 88%;right: 300px;text-align: center;margin-top: -8px;width: 200px;}
+    @media (max-width: 600px) {
+      small { font-size: 8px; line-height: 10px; }
+      #help { width: 100px; font-size: 10px; line-height: 12px; }
+    }
+  </style>
+</head><body>
+  <div id="loading">Loading...</div>
+  <div id="help">
+    
+  </div>
+  <img id="tiles" src="tiles.jpg">
+  <img id="xneg" src="xneg.jpg">
+  <img id="xpos" src="xpos.jpg">
+  <img id="ypos" src="ypos.jpg">
+  <img id="zneg" src="zneg.jpg">
+  <img id="zpos" src="zpos.jpg">
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body></html>

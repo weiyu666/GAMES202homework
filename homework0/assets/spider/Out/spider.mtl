@@ -1,0 +1,71 @@
+# unity3d Wavefront OBJ Exporter
+newmtl bottom
+    Ns 0
+    Ni 1.5
+    d 1
+    Tr 0
+    Tf 1 1 1
+    illum 2
+    Ka 0.2 0.2 0.2
+    Kd 0.690196 0.639216 0.615686
+    Ks 0 0 0
+newmtl up
+    Ns 0
+    Ni 1.5
+    d 1
+    Tr 0
+    Tf 1 1 1
+    illum 2
+    Ka 0.2 0.2 0.2
+    Kd 0.690196 0.639216 0.615686
+    Ks 0 0 0
+    map_Ka spider_up.jpg
+    map_Kd spider_up.jpg
+newmtl 180
+    Ns 0
+    Ni 1.5
+    d 1
+    Tr 0
+    Tf 1 1 1
+    illum 2
+    Ka 0.2 0.2 0.2
+    Kd 0.690196 0.639216 0.615686
+    Ks 0 0 0
+    map_Ka spider_180.jpg
+    map_Kd spider_180.jpg
+newmtl 270
+    Ns 0
+    Ni 1.5
+    d 1
+    Tr 0
+    Tf 1 1 1
+    illum 2
+    Ka 0.2 0.2 0.2
+    Kd 0.690196 0.639216 0.615686
+    Ks 0 0 0
+    map_Ka spider_270.jpg
+    map_Kd spider_270.jpg
+newmtl 0
+    Ns 0
+    Ni 1.5
+    d 1
+    Tr 0
+    Tf 1 1 1
+    illum 2
+    Ka 0.2 0.2 0.2
+    Kd 0.690196 0.639216 0.615686
+    Ks 0 0 0
+    map_Ka spider_0.jpg
+    map_Kd spider_0.jpg
+newmtl 90
+    Ns 0
+    Ni 1.5
+    d 1
+    Tr 0
+    Tf 1 1 1
+    illum 2
+    Ka 0.2 0.2 0.2
+    Kd 0.690196 0.639216 0.615686
+    Ks 0 0 0
+    map_Ka spider_90.jpg
+    map_Kd spider_90.jpg
