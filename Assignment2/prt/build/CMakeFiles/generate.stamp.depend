@@ -1,0 +1,23 @@
+# CMake generation dependency list for this directory.
+D:/cmake/share/cmake-3.15/Modules/CMakeCInformation.cmake
+D:/cmake/share/cmake-3.15/Modules/CMakeCXXInformation.cmake
+D:/cmake/share/cmake-3.15/Modules/CMakeCommonLanguageInclude.cmake
+D:/cmake/share/cmake-3.15/Modules/CMakeGenericSystem.cmake
+D:/cmake/share/cmake-3.15/Modules/CMakeInitializeConfigs.cmake
+D:/cmake/share/cmake-3.15/Modules/CMakeLanguageInformation.cmake
+D:/cmake/share/cmake-3.15/Modules/CMakeRCInformation.cmake
+D:/cmake/share/cmake-3.15/Modules/CMakeSystemSpecificInformation.cmake
+D:/cmake/share/cmake-3.15/Modules/CMakeSystemSpecificInitialize.cmake
+D:/cmake/share/cmake-3.15/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+D:/cmake/share/cmake-3.15/Modules/Compiler/MSVC-C.cmake
+D:/cmake/share/cmake-3.15/Modules/Compiler/MSVC-CXX.cmake
+D:/cmake/share/cmake-3.15/Modules/Platform/Windows-MSVC-C.cmake
+D:/cmake/share/cmake-3.15/Modules/Platform/Windows-MSVC-CXX.cmake
+D:/cmake/share/cmake-3.15/Modules/Platform/Windows-MSVC.cmake
+D:/cmake/share/cmake-3.15/Modules/Platform/Windows.cmake
+D:/cmake/share/cmake-3.15/Modules/Platform/WindowsPaths.cmake
+F:/GAMES202/Assignment2/prt/CMakeLists.txt
+F:/GAMES202/Assignment2/prt/build/CMakeFiles/3.15.5/CMakeCCompiler.cmake
+F:/GAMES202/Assignment2/prt/build/CMakeFiles/3.15.5/CMakeCXXCompiler.cmake
+F:/GAMES202/Assignment2/prt/build/CMakeFiles/3.15.5/CMakeRCCompiler.cmake
+F:/GAMES202/Assignment2/prt/build/CMakeFiles/3.15.5/CMakeSystem.cmake

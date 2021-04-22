@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath\ImathBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath\ImathRandom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath\ImathColorAlgo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath\ImathShear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath\ImathFun.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath\ImathVec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath\ImathMatrixAlgo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2FA985C3-6CDF-3A6B-A932-10006245D505}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

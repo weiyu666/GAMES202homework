@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{31603AE5-6D66-3659-8126-B4FD0A42D802}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>IlmImf</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">IlmImf.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">IlmImf</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">IlmImf.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">IlmImf</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">IlmImf.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">IlmImf</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">IlmImf.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">IlmImf</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\zlib;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\IlmThread;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfUtil;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmaketiled;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrenvmap;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmakepreview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmultiview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfFuzzTest;F:\GAMES202\Assignment2\prt\ext\openexr\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4275;4267;4244;4477;4996;4800;4334;4251;4305;4302;4311;4018</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR="F:/GAMES202/Assignment2/prt/IlmImfTest/";CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR=\"F:/GAMES202/Assignment2/prt/IlmImfTest/\";CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\zlib;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\IlmThread;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfUtil;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmaketiled;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrenvmap;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmakepreview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmultiview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfFuzzTest;F:\GAMES202\Assignment2\prt\ext\openexr\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR="F:/GAMES202/Assignment2/prt/IlmImfTest/";CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\zlib;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\IlmThread;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfUtil;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmaketiled;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrenvmap;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmakepreview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmultiview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfFuzzTest;F:\GAMES202\Assignment2\prt\ext\openexr\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\zlib;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\zlib;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\IlmThread;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfUtil;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmaketiled;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrenvmap;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmakepreview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmultiview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfFuzzTest;F:\GAMES202\Assignment2\prt\ext\openexr\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\zlib;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\IlmThread;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfUtil;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmaketiled;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrenvmap;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmakepreview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmultiview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfFuzzTest;F:\GAMES202\Assignment2\prt\ext\openexr\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4275;4267;4244;4477;4996;4800;4334;4251;4305;4302;4311;4018</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR="F:/GAMES202/Assignment2/prt/IlmImfTest/";CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR=\"F:/GAMES202/Assignment2/prt/IlmImfTest/\";CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\zlib;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\IlmThread;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfUtil;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmaketiled;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrenvmap;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmakepreview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmultiview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfFuzzTest;F:\GAMES202\Assignment2\prt\ext\openexr\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR="F:/GAMES202/Assignment2/prt/IlmImfTest/";CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\zlib;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\IlmThread;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfUtil;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmaketiled;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrenvmap;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmakepreview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmultiview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfFuzzTest;F:\GAMES202\Assignment2\prt\ext\openexr\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\zlib;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\zlib;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\IlmThread;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfUtil;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmaketiled;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrenvmap;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmakepreview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmultiview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfFuzzTest;F:\GAMES202\Assignment2\prt\ext\openexr\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\zlib;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\IlmThread;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfUtil;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmaketiled;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrenvmap;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmakepreview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmultiview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfFuzzTest;F:\GAMES202\Assignment2\prt\ext\openexr\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4275;4267;4244;4477;4996;4800;4334;4251;4305;4302;4311;4018</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR="F:/GAMES202/Assignment2/prt/IlmImfTest/";CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR=\"F:/GAMES202/Assignment2/prt/IlmImfTest/\";CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\zlib;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\IlmThread;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfUtil;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmaketiled;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrenvmap;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmakepreview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmultiview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfFuzzTest;F:\GAMES202\Assignment2\prt\ext\openexr\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR="F:/GAMES202/Assignment2/prt/IlmImfTest/";CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\zlib;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\IlmThread;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfUtil;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmaketiled;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrenvmap;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmakepreview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmultiview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfFuzzTest;F:\GAMES202\Assignment2\prt\ext\openexr\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\zlib;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\zlib;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\IlmThread;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfUtil;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmaketiled;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrenvmap;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmakepreview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmultiview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfFuzzTest;F:\GAMES202\Assignment2\prt\ext\openexr\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\zlib;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\IlmThread;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfUtil;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmaketiled;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrenvmap;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmakepreview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmultiview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfFuzzTest;F:\GAMES202\Assignment2\prt\ext\openexr\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4275;4267;4244;4477;4996;4800;4334;4251;4305;4302;4311;4018</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR="F:/GAMES202/Assignment2/prt/IlmImfTest/";CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR=\"F:/GAMES202/Assignment2/prt/IlmImfTest/\";CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\zlib;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\IlmThread;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfUtil;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmaketiled;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrenvmap;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmakepreview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmultiview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfFuzzTest;F:\GAMES202\Assignment2\prt\ext\openexr\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;HAVE_CONFIG_H;ILM_IMF_TEST_IMAGEDIR="F:/GAMES202/Assignment2/prt/IlmImfTest/";CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\zlib;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\IlmThread;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfUtil;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmaketiled;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrenvmap;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmakepreview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmultiview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfFuzzTest;F:\GAMES202\Assignment2\prt\ext\openexr\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\zlib;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\ext\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\zlib;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\IlmThread;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfUtil;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmaketiled;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrenvmap;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmakepreview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\exrmultiview;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImfFuzzTest;F:\GAMES202\Assignment2\prt\ext\openexr\zlib;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\GAMES202\Assignment2\prt\build\CMakeFiles\36aa881ec4be69965d0e3ec92d02310f\b44ExpLogTable.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating b44ExpLogTable.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake\bin\cmake.exe -E env PATH=F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/Half/Debug;F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/IlmThread/Debug;F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/Iex/Debug F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/Debug/b44ExpLogTable.exe &gt; F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/b44ExpLogTable.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\Debug\b44ExpLogTable.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\b44ExpLogTable.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating b44ExpLogTable.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake\bin\cmake.exe -E env PATH=F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/Half/Release;F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/IlmThread/Release;F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/Iex/Release F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/Release/b44ExpLogTable.exe &gt; F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/b44ExpLogTable.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\Release\b44ExpLogTable.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\b44ExpLogTable.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating b44ExpLogTable.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake\bin\cmake.exe -E env PATH=F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/Half/MinSizeRel;F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/IlmThread/MinSizeRel;F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/Iex/MinSizeRel F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/MinSizeRel/b44ExpLogTable.exe &gt; F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/b44ExpLogTable.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\MinSizeRel\b44ExpLogTable.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\b44ExpLogTable.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating b44ExpLogTable.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake\bin\cmake.exe -E env PATH=F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/Half/RelWithDebInfo;F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/IlmThread/RelWithDebInfo;F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/Iex/RelWithDebInfo F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/RelWithDebInfo/b44ExpLogTable.exe &gt; F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/b44ExpLogTable.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\RelWithDebInfo\b44ExpLogTable.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\b44ExpLogTable.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\GAMES202\Assignment2\prt\build\CMakeFiles\36aa881ec4be69965d0e3ec92d02310f\dwaLookups.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating dwaLookups.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake\bin\cmake.exe -E env PATH=F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/Half/Debug;F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/IlmThread/Debug;F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/Iex/Debug F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/Debug/dwaLookups.exe &gt; F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/dwaLookups.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\Debug\dwaLookups.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\dwaLookups.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating dwaLookups.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake\bin\cmake.exe -E env PATH=F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/Half/Release;F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/IlmThread/Release;F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/Iex/Release F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/Release/dwaLookups.exe &gt; F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/dwaLookups.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\Release\dwaLookups.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\dwaLookups.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating dwaLookups.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake\bin\cmake.exe -E env PATH=F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/Half/MinSizeRel;F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/IlmThread/MinSizeRel;F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/Iex/MinSizeRel F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/MinSizeRel/dwaLookups.exe &gt; F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/dwaLookups.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\MinSizeRel\dwaLookups.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\dwaLookups.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating dwaLookups.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake\bin\cmake.exe -E env PATH=F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/Half/RelWithDebInfo;F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/IlmThread/RelWithDebInfo;F:/GAMES202/Assignment2/prt/build/ext_build/openexr/IlmBase/Iex/RelWithDebInfo F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/RelWithDebInfo/dwaLookups.exe &gt; F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/dwaLookups.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\RelWithDebInfo\dwaLookups.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\dwaLookups.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/GAMES202/Assignment2/prt/ext/openexr/OpenEXR/IlmImf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake\bin\cmake.exe -SF:/GAMES202/Assignment2/prt -BF:/GAMES202/Assignment2/prt/build --check-stamp-file F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/GAMES202/Assignment2/prt/ext/openexr/OpenEXR/IlmImf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake\bin\cmake.exe -SF:/GAMES202/Assignment2/prt -BF:/GAMES202/Assignment2/prt/build --check-stamp-file F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/GAMES202/Assignment2/prt/ext/openexr/OpenEXR/IlmImf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake\bin\cmake.exe -SF:/GAMES202/Assignment2/prt -BF:/GAMES202/Assignment2/prt/build --check-stamp-file F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/GAMES202/Assignment2/prt/ext/openexr/OpenEXR/IlmImf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake\bin\cmake.exe -SF:/GAMES202/Assignment2/prt -BF:/GAMES202/Assignment2/prt/build --check-stamp-file F:/GAMES202/Assignment2/prt/build/ext_build/openexr/OpenEXR/IlmImf/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfB44Compressor.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfDwaCompressor.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfBoxAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfCRgbaFile.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfChannelList.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfChannelListAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfFloatAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfFrameBuffer.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfHeader.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfIO.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfInputFile.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfIntAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfLineOrderAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfMatrixAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfOpaqueAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfOutputFile.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfRgbaFile.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfStringAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfVecAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfHuf.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfThreading.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfWav.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfLut.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfCompressor.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfRleCompressor.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfZipCompressor.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfPizCompressor.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfMisc.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfCompressionAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfDoubleAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfConvert.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfPreviewImage.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfPreviewImageAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfVersion.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfChromaticities.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfChromaticitiesAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfKeyCode.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfKeyCodeAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfTimeCode.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfTimeCodeAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfRational.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfRationalAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfFramesPerSecond.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfStandardAttributes.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfStdIO.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfEnvmap.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfEnvmapAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfScanLineInputFile.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfTiledInputFile.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfTiledMisc.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfTiledOutputFile.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfTiledRgbaFile.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfTileDescriptionAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfTileOffsets.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfRgbaYca.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfPxr24Compressor.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfTestFile.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfStringVectorAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfMultiView.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfAcesFile.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfMultiPartOutputFile.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfGenericOutputFile.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfOutputPartData.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfMultiPartInputFile.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfGenericInputFile.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfPartType.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfInputPartData.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfOutputPart.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfTiledOutputPart.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfInputPart.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfTiledInputPart.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfDeepScanLineInputPart.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfDeepScanLineOutputPart.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfDeepScanLineInputFile.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfDeepScanLineOutputFile.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfDeepTiledInputPart.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfDeepTiledOutputPart.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfDeepTiledInputFile.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfDeepTiledOutputFile.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfDeepFrameBuffer.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfDeepCompositing.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfCompositeDeepScanLine.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfDeepImageStateAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfFastHuf.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfFloatVectorAttribute.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfRle.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfSystemSpecific.cpp" />
+    <ClCompile Include="F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf\ImfZip.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ZERO_CHECK.vcxproj">
+      <Project>{9BE2DF62-4775-37DD-B8CA-3B0DB6F9047F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\Half\Half.vcxproj">
+      <Project>{C322556F-8268-33A3-9A7D-B9C1059EAA3D}</Project>
+      <Name>Half</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\Iex\Iex.vcxproj">
+      <Project>{50F7D8B9-192F-3747-87D2-AE28015ADCEE}</Project>
+      <Name>Iex</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\IlmThread\IlmThread.vcxproj">
+      <Project>{D2DCC97E-EBCB-30FD-9655-0F87C1370896}</Project>
+      <Name>IlmThread</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\Imath\Imath.vcxproj">
+      <Project>{1C09558A-9770-3FA9-89DD-D570717B01FD}</Project>
+      <Name>Imath</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\b44ExpLogTable.vcxproj">
+      <Project>{103FB653-60DD-33A5-933B-8E3046E9F477}</Project>
+      <Name>b44ExpLogTable</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\dwaLookups.vcxproj">
+      <Project>{00F8320E-B71E-3B40-8E1E-16688AD77CD4}</Project>
+      <Name>dwaLookups</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\openexr\zlib\zlib.vcxproj">
+      <Project>{C841BC0B-4776-3E6B-83DC-F6A4323B67D4}</Project>
+      <Name>zlib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

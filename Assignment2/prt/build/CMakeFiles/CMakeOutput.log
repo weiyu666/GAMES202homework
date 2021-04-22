@@ -1,0 +1,235 @@
+The system is: Windows - 10.0.19042 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.9.0+57a23d249
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+生成启动时间为 2021/4/22 15:39:27。
+节点 1 上的项目“F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CompilerIdC\CompilerIdC.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“Debug\”。
+  正在创建目录“Debug\CompilerIdC.tlog\”。
+InitializeBuildStatus:
+  正在创建“Debug\CompilerIdC.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX64\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CompilerIdC\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\Hostx64\x64\cl.exe
+FinalizeBuildStatus:
+  正在删除文件“Debug\CompilerIdC.tlog\unsuccessfulbuild”。
+  正在对“Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate”执行 Touch 任务。
+已完成生成项目“F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CompilerIdC\CompilerIdC.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:02.08
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "F:/GAMES202/Assignment2/prt/build/CMakeFiles/3.15.5/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.9.0+57a23d249
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+生成启动时间为 2021/4/22 15:39:30。
+节点 1 上的项目“F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CompilerIdCXX\CompilerIdCXX.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“Debug\”。
+  正在创建目录“Debug\CompilerIdCXX.tlog\”。
+InitializeBuildStatus:
+  正在创建“Debug\CompilerIdCXX.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX64\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CompilerIdCXX\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\Hostx64\x64\cl.exe
+FinalizeBuildStatus:
+  正在删除文件“Debug\CompilerIdCXX.tlog\unsuccessfulbuild”。
+  正在对“Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate”执行 Touch 任务。
+已完成生成项目“F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CompilerIdCXX\CompilerIdCXX.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:02.04
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "F:/GAMES202/Assignment2/prt/build/CMakeFiles/3.15.5/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: F:/GAMES202/Assignment2/prt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_687f4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.9.0+57a23d249
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.28.29912 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  testCCompiler.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_687f4.dir\Debug\\" /Fd"cmTC_687f4.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  cmTC_687f4.vcxproj -> F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\Debug\cmTC_687f4.exe
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: F:/GAMES202/Assignment2/prt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_6e618.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.9.0+57a23d249
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.28.29912 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  CMakeCCompilerABI.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6e618.dir\Debug\\" /Fd"cmTC_6e618.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "D:\cmake\share\cmake-3.15\Modules\CMakeCCompilerABI.c"
+  cmTC_6e618.vcxproj -> F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\Debug\cmTC_6e618.exe
+
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: F:/GAMES202/Assignment2/prt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_c60d1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.9.0+57a23d249
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.28.29912 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  testCXXCompiler.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c60d1.dir\Debug\\" /Fd"cmTC_c60d1.dir\Debug\vc142.pdb" /Gd /TP /errorReport:queue F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  cmTC_c60d1.vcxproj -> F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\Debug\cmTC_c60d1.exe
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: F:/GAMES202/Assignment2/prt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_89ab0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.9.0+57a23d249
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.28.29912 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  CMakeCXXCompilerABI.cpp
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_89ab0.dir\Debug\\" /Fd"cmTC_89ab0.dir\Debug\vc142.pdb" /Gd /TP /errorReport:queue "D:\cmake\share\cmake-3.15\Modules\CMakeCXXCompilerABI.cpp"
+  cmTC_89ab0.vcxproj -> F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\Debug\cmTC_89ab0.exe
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: F:/GAMES202/Assignment2/prt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_80340.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.9.0+57a23d249
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.28.29912 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_80340.dir\Debug\\" /Fd"cmTC_80340.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  cmTC_80340.vcxproj -> F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\Debug\cmTC_80340.exe
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: F:/GAMES202/Assignment2/prt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_96555.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.9.0+57a23d249
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.28.29912 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_96555.dir\Debug\\" /Fd"cmTC_96555.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  cmTC_96555.vcxproj -> F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\Debug\cmTC_96555.exe
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: F:/GAMES202/Assignment2/prt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_d94f7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.9.0+57a23d249
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.28.29912 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d94f7.dir\Debug\\" /Fd"cmTC_d94f7.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  cmTC_d94f7.vcxproj -> F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\Debug\cmTC_d94f7.exe
+
+
+
+Checking whether the ASM_MASM compiler is MSVC using "-?" matched "Microsoft":
+Microsoft (R) Macro Assembler (x64) Version 14.28.29912.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+        ML64 [ /options ] filelist [ /link linkoptions ]
+
+/Bl<linker> Use alternate linker          /Sf Generate first pass listing
+/c Assemble without linking               /Sl<width> Set line width
+/Cp Preserve case of user identifiers     /Sn Suppress symbol-table listing
+/Cx Preserve case in publics, externs     /Sp<length> Set page length
+/D<name>[=text] Define text macro         /Ss<string> Set subtitle
+/EP Output preprocessed listing to stdout /St<string> Set title
+/F <hex> Set stack size (bytes)           /Sx List false conditionals
+/Fe<file> Name executable                 /Ta<file> Assemble non-.ASM file
+/Fl[file] Generate listing                /w Same as /W0 /WX
+/Fm[file] Generate map                    /WX Treat warnings as errors
+/Fo<file> Name object file                /W<number> Set warning level
+/Fr[file] Generate limited browser info   /X Ignore INCLUDE environment path
+/FR[file] Generate full browser info      /Zd Add line number debug info
+/I<name> Add include path                 /Zf Make all symbols public
+/link <linker options and libraries>      /Zi Add symbolic debug info
+/nologo Suppress copyright message        /Zp[n] Set structure alignment
+/Sa Maximize source listing               /Zs Perform syntax check only
+/ZH:SHA_256 Use SHA256 for checksum
+    in debug info (experimental)
+/Gy[-] separate functions for linker
+/errorReport:<option> Deprecated. Report internal assembler errors to Microsoft
+    none - do not send report
+    prompt - prompt to immediately send report
+    queue - at next admin logon, prompt to send report
+    send - send report automatically
+Performing C++ SOURCE FILE Test SUPPORTS_VOLATILE_FLAG succeeded with the following output:
+Change Dir: F:/GAMES202/Assignment2/prt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_3d5e9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.9.0+57a23d249
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.28.29912 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  src.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /D _CRT_SECURE_NO_DEPRECATE /D _WIN32_WINNT=0x0600 /D USE_WINTHREAD /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D __TBB_NO_IMPLICIT_LINKAGE /D SUPPORTS_VOLATILE_FLAG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_3d5e9.dir\Debug\\" /Fd"cmTC_3d5e9.dir\Debug\vc142.pdb" /Gd /TP /errorReport:queue  /volatile:iso F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\src.cxx
+  cmTC_3d5e9.vcxproj -> F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\Debug\cmTC_3d5e9.exe
+
+
+Source file was:
+int main() { return 0; }

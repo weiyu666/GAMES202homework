@@ -1,0 +1,194 @@
+Determining size of off64_t failed with the following output:
+Change Dir: F:/GAMES202/Assignment2/prt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_533f0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.9.0+57a23d249
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.28.29912 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  OFF64_T.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_533f0.dir\Debug\\" /Fd"cmTC_533f0.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue F:\GAMES202\Assignment2\prt\build\CMakeFiles\CheckTypeSize\OFF64_T.c
+F:\GAMES202\Assignment2\prt\build\CMakeFiles\CheckTypeSize\OFF64_T.c(25,12): error C2065: “off64_t”: 未声明的标识符 [F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\cmTC_533f0.vcxproj]
+F:\GAMES202\Assignment2\prt\build\CMakeFiles\CheckTypeSize\OFF64_T.c(26,12): error C2065: “off64_t”: 未声明的标识符 [F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\cmTC_533f0.vcxproj]
+F:\GAMES202\Assignment2\prt\build\CMakeFiles\CheckTypeSize\OFF64_T.c(27,12): error C2065: “off64_t”: 未声明的标识符 [F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\cmTC_533f0.vcxproj]
+F:\GAMES202\Assignment2\prt\build\CMakeFiles\CheckTypeSize\OFF64_T.c(28,12): error C2065: “off64_t”: 未声明的标识符 [F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\cmTC_533f0.vcxproj]
+F:\GAMES202\Assignment2\prt\build\CMakeFiles\CheckTypeSize\OFF64_T.c(29,12): error C2065: “off64_t”: 未声明的标识符 [F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\cmTC_533f0.vcxproj]
+
+
+F:/GAMES202/Assignment2/prt/build/CMakeFiles/CheckTypeSize/OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function fseeko exists failed with the following output:
+Change Dir: F:/GAMES202/Assignment2/prt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_4c229.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.9.0+57a23d249
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.28.29912 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4c229.dir\Debug\\" /Fd"cmTC_4c229.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "D:\cmake\share\cmake-3.15\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 fseeko，函数 main 中引用了该符号 [F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\cmTC_4c229.vcxproj]
+F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\Debug\cmTC_4c229.exe : fatal error LNK1120: 1 个无法解析的外部命令 [F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\cmTC_4c229.vcxproj]
+
+
+
+Determining if the include file unistd.h exists failed with the following output:
+Change Dir: F:/GAMES202/Assignment2/prt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_57fd9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.9.0+57a23d249
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.28.29912 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_57fd9.dir\Debug\\" /Fd"cmTC_57fd9.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: 无法打开包括文件: “unistd.h”: No such file or directory [F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\cmTC_57fd9.vcxproj]
+
+
+
+Performing C++ SOURCE FILE Test HAVE_GCC_INLINE_ASM_AVX failed with the following output:
+Change Dir: F:/GAMES202/Assignment2/prt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_8c0a4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.9.0+57a23d249
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.28.29912 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  src.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D __TBB_NO_IMPLICIT_LINKAGE /D HAVE_GCC_INLINE_ASM_AVX /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_8c0a4.dir\Debug\\" /Fd"cmTC_8c0a4.dir\Debug\vc142.pdb" /Gd /TP /wd4275 /wd4267 /wd4244 /wd4477 /wd4996 /wd4800 /wd4334 /wd4251 /wd4305 /wd4302 /wd4311 /wd4018 /errorReport:queue F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\src.cxx
+F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\src.cxx(13,1): fatal error C1189: #error:  No GCC style inline asm supported for AVX instructions [F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\cmTC_8c0a4.vcxproj]
+
+
+Source file was:
+
+	int main()
+	{
+	 #if defined(__GNUC__) && defined(__SSE2__)
+		 int n   = 0;
+		 int eax = 0;
+		 int edx = 0;
+		 __asm__(
+			 "xgetbv     ;"
+			 "vzeroupper  "
+			 : "=a"(eax), "=d"(edx) : "c"(n) : );
+	 #else
+		 #error No GCC style inline asm supported for AVX instructions
+	 #endif
+	}
+	
+Performing C++ SOURCE FILE Test HAVE_SYSCONF_NPROCESSORS_ONLN failed with the following output:
+Change Dir: F:/GAMES202/Assignment2/prt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_27e8c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.9.0+57a23d249
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.28.29912 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  src.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D __TBB_NO_IMPLICIT_LINKAGE /D HAVE_SYSCONF_NPROCESSORS_ONLN /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_27e8c.dir\Debug\\" /Fd"cmTC_27e8c.dir\Debug\vc142.pdb" /Gd /TP /wd4275 /wd4267 /wd4244 /wd4477 /wd4996 /wd4800 /wd4334 /wd4251 /wd4305 /wd4302 /wd4311 /wd4018 /errorReport:queue F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\src.cxx
+F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\src.cxx(2,14): fatal error C1083: 无法打开包括文件: “unistd.h”: No such file or directory [F:\GAMES202\Assignment2\prt\build\CMakeFiles\CMakeTmp\cmTC_27e8c.vcxproj]
+
+
+Source file was:
+
+    #include <unistd.h>
+    int main()
+    {
+        sysconf(_SC_NPROCESSORS_ONLN);
+    }
+    
+Checking whether the ASM_MASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+Microsoft (R) Macro Assembler (x64) Version 14.28.29912.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : --version
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is Clang using "--version" did not match "(clang version)":
+Microsoft (R) Macro Assembler (x64) Version 14.28.29912.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : --version
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is AppleClang using "--version" did not match "(Apple LLVM version)":
+Microsoft (R) Macro Assembler (x64) Version 14.28.29912.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : --version
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is ARMClang using "--version" did not match "armclang":
+Microsoft (R) Macro Assembler (x64) Version 14.28.29912.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : --version
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is HP using "-V" did not match "HP C":
+Microsoft (R) Macro Assembler (x64) Version 14.28.29912.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : -V
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is Intel using "--version" did not match "(ICC)":
+Microsoft (R) Macro Assembler (x64) Version 14.28.29912.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : --version
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is SunPro using "-V" did not match "Sun C":
+Microsoft (R) Macro Assembler (x64) Version 14.28.29912.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : -V
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is XL using "-qversion" did not match "XL C":
+Microsoft (R) Macro Assembler (x64) Version 14.28.29912.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : -qversion
+MASM : fatal error A1017:missing source filename

@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+D:/cmake/share/cmake-3.15/Modules/CPack.cmake
+D:/cmake/share/cmake-3.15/Modules/CPackComponent.cmake
+D:/cmake/share/cmake-3.15/Modules/CheckCXXSourceCompiles.cmake
+D:/cmake/share/cmake-3.15/Templates/CPackConfig.cmake.in
+F:/GAMES202/Assignment2/prt/ext/openexr/OpenEXR/CMakeLists.txt

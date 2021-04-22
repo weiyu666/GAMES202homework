@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E24588F9-7373-3972-8CA2-F357D2C96A6D}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\GAMES202\Assignment2\prt\include;F:\GAMES202\Assignment2\prt\ext\tinyformat;F:\GAMES202\Assignment2\prt\ext\eigen;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\ext\tbb\include;F:\GAMES202\Assignment2\prt\ext\pcg32;F:\GAMES202\Assignment2\prt\ext\pugixml\src;F:\GAMES202\Assignment2\prt\ext\hypothesis;F:\GAMES202\Assignment2\prt\ext\nanogui\ext\glfw\include;F:\GAMES202\Assignment2\prt\ext\nanogui\ext\glew\include;F:\GAMES202\Assignment2\prt\ext\nanogui\ext\nanovg\src;F:\GAMES202\Assignment2\prt\ext\nanogui\include;F:\GAMES202\Assignment2\prt\ext\filesystem;F:\GAMES202\Assignment2\prt\ext\nanogui\ext\nanovg\example;F:\GAMES202\Assignment2\prt\ext\spherical-harmonics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\GAMES202\Assignment2\prt\include;F:\GAMES202\Assignment2\prt\ext\tinyformat;F:\GAMES202\Assignment2\prt\ext\eigen;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\ext\tbb\include;F:\GAMES202\Assignment2\prt\ext\pcg32;F:\GAMES202\Assignment2\prt\ext\pugixml\src;F:\GAMES202\Assignment2\prt\ext\hypothesis;F:\GAMES202\Assignment2\prt\ext\nanogui\ext\glfw\include;F:\GAMES202\Assignment2\prt\ext\nanogui\ext\glew\include;F:\GAMES202\Assignment2\prt\ext\nanogui\ext\nanovg\src;F:\GAMES202\Assignment2\prt\ext\nanogui\include;F:\GAMES202\Assignment2\prt\ext\filesystem;F:\GAMES202\Assignment2\prt\ext\nanogui\ext\nanovg\example;F:\GAMES202\Assignment2\prt\ext\spherical-harmonics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\GAMES202\Assignment2\prt\include;F:\GAMES202\Assignment2\prt\ext\tinyformat;F:\GAMES202\Assignment2\prt\ext\eigen;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\ext\tbb\include;F:\GAMES202\Assignment2\prt\ext\pcg32;F:\GAMES202\Assignment2\prt\ext\pugixml\src;F:\GAMES202\Assignment2\prt\ext\hypothesis;F:\GAMES202\Assignment2\prt\ext\nanogui\ext\glfw\include;F:\GAMES202\Assignment2\prt\ext\nanogui\ext\glew\include;F:\GAMES202\Assignment2\prt\ext\nanogui\ext\nanovg\src;F:\GAMES202\Assignment2\prt\ext\nanogui\include;F:\GAMES202\Assignment2\prt\ext\filesystem;F:\GAMES202\Assignment2\prt\ext\nanogui\ext\nanovg\example;F:\GAMES202\Assignment2\prt\ext\spherical-harmonics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\GAMES202\Assignment2\prt\include;F:\GAMES202\Assignment2\prt\ext\tinyformat;F:\GAMES202\Assignment2\prt\ext\eigen;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Imath;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Iex;F:\GAMES202\Assignment2\prt\ext\openexr\IlmBase\Half;F:\GAMES202\Assignment2\prt\ext\openexr\OpenEXR\IlmImf;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\config;F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\config;F:\GAMES202\Assignment2\prt\ext\tbb\include;F:\GAMES202\Assignment2\prt\ext\pcg32;F:\GAMES202\Assignment2\prt\ext\pugixml\src;F:\GAMES202\Assignment2\prt\ext\hypothesis;F:\GAMES202\Assignment2\prt\ext\nanogui\ext\glfw\include;F:\GAMES202\Assignment2\prt\ext\nanogui\ext\glew\include;F:\GAMES202\Assignment2\prt\ext\nanogui\ext\nanovg\src;F:\GAMES202\Assignment2\prt\ext\nanogui\include;F:\GAMES202\Assignment2\prt\ext\filesystem;F:\GAMES202\Assignment2\prt\ext\nanogui\ext\nanovg\example;F:\GAMES202\Assignment2\prt\ext\spherical-harmonics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\GAMES202\Assignment2\prt\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/GAMES202/Assignment2/prt/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake\bin\cmake.exe -SF:/GAMES202/Assignment2/prt -BF:/GAMES202/Assignment2/prt/build --check-stamp-file F:/GAMES202/Assignment2/prt/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cmake\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\cmake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\cmake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CMakeCCompiler.cmake;F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CMakeCXXCompiler.cmake;F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CMakeRCCompiler.cmake;F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\GAMES202\Assignment2\prt\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/GAMES202/Assignment2/prt/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake\bin\cmake.exe -SF:/GAMES202/Assignment2/prt -BF:/GAMES202/Assignment2/prt/build --check-stamp-file F:/GAMES202/Assignment2/prt/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cmake\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\cmake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\cmake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CMakeCCompiler.cmake;F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CMakeCXXCompiler.cmake;F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CMakeRCCompiler.cmake;F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\GAMES202\Assignment2\prt\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/GAMES202/Assignment2/prt/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake\bin\cmake.exe -SF:/GAMES202/Assignment2/prt -BF:/GAMES202/Assignment2/prt/build --check-stamp-file F:/GAMES202/Assignment2/prt/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cmake\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\cmake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\cmake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CMakeCCompiler.cmake;F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CMakeCXXCompiler.cmake;F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CMakeRCCompiler.cmake;F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\GAMES202\Assignment2\prt\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/GAMES202/Assignment2/prt/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake\bin\cmake.exe -SF:/GAMES202/Assignment2/prt -BF:/GAMES202/Assignment2/prt/build --check-stamp-file F:/GAMES202/Assignment2/prt/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cmake\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\cmake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\cmake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\cmake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CMakeCCompiler.cmake;F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CMakeCXXCompiler.cmake;F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CMakeRCCompiler.cmake;F:\GAMES202\Assignment2\prt\build\CMakeFiles\3.15.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\GAMES202\Assignment2\prt\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ZERO_CHECK.vcxproj">
+      <Project>{9BE2DF62-4775-37DD-B8CA-3B0DB6F9047F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\Half\Half.vcxproj">
+      <Project>{C322556F-8268-33A3-9A7D-B9C1059EAA3D}</Project>
+      <Name>Half</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\Iex\Iex.vcxproj">
+      <Project>{50F7D8B9-192F-3747-87D2-AE28015ADCEE}</Project>
+      <Name>Iex</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\IexMath\IexMath.vcxproj">
+      <Project>{4A066C5B-FA06-35F3-9C3A-8123FC5CFEAC}</Project>
+      <Name>IexMath</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\IlmImf.vcxproj">
+      <Project>{31603AE5-6D66-3659-8126-B4FD0A42D802}</Project>
+      <Name>IlmImf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\IlmThread\IlmThread.vcxproj">
+      <Project>{D2DCC97E-EBCB-30FD-9655-0F87C1370896}</Project>
+      <Name>IlmThread</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\Imath\Imath.vcxproj">
+      <Project>{1C09558A-9770-3FA9-89DD-D570717B01FD}</Project>
+      <Name>Imath</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\b44ExpLogTable.vcxproj">
+      <Project>{103FB653-60DD-33A5-933B-8E3046E9F477}</Project>
+      <Name>b44ExpLogTable</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\openexr\OpenEXR\IlmImf\dwaLookups.vcxproj">
+      <Project>{00F8320E-B71E-3B40-8E1E-16688AD77CD4}</Project>
+      <Name>dwaLookups</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\Half\eLut.vcxproj">
+      <Project>{5B86A04B-269C-3404-9185-B64D878DF699}</Project>
+      <Name>eLut</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\nanogui\ext\glfw\src\glfw_objects.vcxproj">
+      <Project>{0A99C11E-70C7-3921-AA88-98B5A98D2AC1}</Project>
+      <Name>glfw_objects</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\nanogui\nanogui.vcxproj">
+      <Project>{C0B8119B-B245-3F19-B25D-034595DCA11D}</Project>
+      <Name>nanogui</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\nori.vcxproj">
+      <Project>{0CB4996B-50F8-30A4-A2CC-8B8E266256A3}</Project>
+      <Name>nori</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\pugixml.vcxproj">
+      <Project>{EA6B38D8-9C82-3D22-A6F9-2D6573595902}</Project>
+      <Name>pugixml</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\tbb\tbb_static.vcxproj">
+      <Project>{E2676F1B-F26C-39CA-B774-2AF78B572682}</Project>
+      <Name>tbb_static</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\openexr\IlmBase\Half\toFloat.vcxproj">
+      <Project>{F686456B-509A-32D4-A7C9-9A4FDF46FF56}</Project>
+      <Name>toFloat</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\warptest.vcxproj">
+      <Project>{6F207852-81D4-3AB8-82F6-434041209F13}</Project>
+      <Name>warptest</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\openexr\zlib\zlib.vcxproj">
+      <Project>{C841BC0B-4776-3E6B-83DC-F6A4323B67D4}</Project>
+      <Name>zlib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\GAMES202\Assignment2\prt\build\ext_build\zlib\zlibstatic.vcxproj">
+      <Project>{8C517A3D-3AD3-3EAB-96D6-EBD6261EC616}</Project>
+      <Name>zlibstatic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

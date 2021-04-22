@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+D:/cmake/share/cmake-3.15/Modules/CMakeASMInformation.cmake
+D:/cmake/share/cmake-3.15/Modules/CMakeASM_MASMInformation.cmake
+D:/cmake/share/cmake-3.15/Modules/CheckCXXCompilerFlag.cmake
+D:/cmake/share/cmake-3.15/Modules/CheckCXXSourceRuns.cmake
+F:/GAMES202/Assignment2/prt/build/CMakeFiles/3.15.5/CMakeASM_MASMCompiler.cmake
+F:/GAMES202/Assignment2/prt/ext/tbb/CMakeLists.txt
+F:/GAMES202/Assignment2/prt/ext/tbb/build/version_string.ver.in
