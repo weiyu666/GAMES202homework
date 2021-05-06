@@ -24,5 +24,8 @@
 ### homework2
 
 作业2主要是在实现PRT(Precomputed Radiance Transfer)本次作业的工作主要分为两个部分：cpp 端的通过一种预计算方法，该方法在离线渲染的 Path Tracing 工具链
-中预计算 lighting 以及 light transport 并将它们用球谐函数拟合后储存；以及在 WebGL框架上使用预计算数据部分
+中预计算 lighting 以及 light transport 并将它们用球谐函数拟合后储存；以及在 WebGL框架上使用预计算数据部分;
+1、基于球谐函数的预计算辐射传输
+2、分为有阴影与无阴影的
+3、加分项旋转
 
