@@ -57,9 +57,16 @@ function loadOBJ(renderer, path, name, objMaterial, transform) {
 									material = buildPhongMaterial(colorMap, mat.specular.toArray(), light, Translation, Scale, "./src/shaders/phongShader/phongVertex.glsl", "./src/shaders/phongShader/phongFragment.glsl");
 									shadowMaterial = buildShadowMaterial(light, Translation, Scale, "./src/shaders/shadowShader/shadowVertex.glsl", "./src/shaders/shadowShader/shadowFragment.glsl");
 									break;
-								// TODO: Add your PRTmaterial here
+								// TODO: Add your PRTmaterial here 
+								case 'PRTMaterial':
+									console.log(PRTMaterial);
+									material = buildPRTMaterial(colorMap, mat.specular.toArray(), light, Translation, Scale, "./src/shaders/prtShader/prtVertex.glsl", "./src/shaders/prtShader/prtFragment.glsl");
+									//要加上envmapid, 因为里面存了好几个light.txt, 不止一个
+									//material = buildPRTMaterial(precomputeL[guiParams.envmapId],"./src/shaders/prtShader/prtVertex.glsl", "./src/shaders/prtShader/prtFragment.glsl");
+									break;
 
 								case 'SkyBoxMaterial':
+									console.log(SkyBoxMaterial);
 									material = buildSkyBoxMaterial("./src/shaders/skyBoxShader/SkyBoxVertex.glsl", "./src/shaders/skyBoxShader/SkyBoxFragment.glsl");
 									break;
 							}

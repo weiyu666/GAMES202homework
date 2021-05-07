@@ -10,7 +10,7 @@ class Material {
         this.#vsSrc = vsSrc;
         this.#fsSrc = fsSrc;
         
-        this.#flatten_uniforms = ['uViewMatrix','uModelMatrix', 'uProjectionMatrix', 'uCameraPos', 'uLightPos'];
+        this.#flatten_uniforms = ['uViewMatrix','uModelMatrix', 'uProjectionMatrix', 'uCameraPos', 'uLightPos','uPrecomputeL'];
         for (let k in uniforms) {
             this.#flatten_uniforms.push(k);
         }

@@ -42,15 +42,18 @@ class WebGLRenderer {
                 }
             }
 
-            // Camera pass
-            for (let i = 0; i < this.meshes.length; i++) {
+             // Camera pass
+             for (let i = 0; i < this.meshes.length; i++) {
                 this.gl.useProgram(this.meshes[i].shader.program.glShaderProgram);
                 this.gl.uniform3fv(this.meshes[i].shader.program.uniforms.uLightPos, this.lights[l].entity.lightPos);
 
+                let colorMat3 = getMat3ValueFromRGB(precomputeL[guiParams.envmapId]);
+                    
                 for (let k in this.meshes[i].material.uniforms) {
 
                     let cameraModelMatrix = mat4.create();
-                    //mat4.fromRotation(cameraModelMatrix, timer, [0, 1, 0]);
+                    mat4.fromRotation(cameraModelMatrix, timer, [0, 1, 0]);
+                    // mat4.fromRotation(cameraModelMatrix, 3.14/2, [0, 1, 0]);
 
                     if (k == 'uMoveWithCamera') { // The rotation of the skybox
                         gl.uniformMatrix4fv(
@@ -59,13 +62,19 @@ class WebGLRenderer {
                             cameraModelMatrix);
                     }
 
-                    // Bonus - Fast Spherical Harmonic Rotation
-                    //let precomputeL_RGBMat3 = getRotationPrecomputeL(precomputeL[guiParams.envmapId], cameraModelMatrix);
-                    
-                    
+                    // Bonus - Fast Spherical Harmonic Rotation 每一帧都要重新赋值
+                    let rotatedColors = getRotationPrecomputeL(colorMat3, cameraModelMatrix);               
+                    if (k == 'uPrecomputeLR') {
+                        gl.uniformMatrix3fv(this.meshes[i].shader.program.uniforms.uPrecomputeLR, false, rotatedColors[0]);     
+                    }
+                    if (k == 'uPrecomputeLG') {
+                        gl.uniformMatrix3fv(this.meshes[i].shader.program.uniforms.uPrecomputeLG, false, rotatedColors[1]);     
+                    }                    
+                    if (k == 'uPrecomputeLB') {
+                        gl.uniformMatrix3fv(this.meshes[i].shader.program.uniforms.uPrecomputeLB, false, rotatedColors[2]);    
+                    }
                 }
-
-                this.meshes[i].draw(this.camera);
+                 this.meshes[i].draw(this.camera);
             }
         }
 
