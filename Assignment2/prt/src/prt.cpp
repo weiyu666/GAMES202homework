@@ -163,8 +163,10 @@ namespace ProjEnv
 		for (int l = 0; l < SHOrder; ++l)
 		{
 			SHCoeffiecents[l] = SHCoeffiecents[l] / sumWeight;
+			SHCoeffiecents[l] = SHNum / sumWeight;
 		}
 		return SHCoeffiecents;
+		//return SHCoeffiecents;
 	}
 }
 

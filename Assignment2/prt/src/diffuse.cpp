@@ -33,8 +33,7 @@ public:
 
     /// Evaluate the BRDF model
     Color3f eval(const BSDFQueryRecord &bRec) const {
-        /* This is a smooth BRDF -- return zero if the measure
-           is wrong, or when queried for illumination on the backside */
+        /*这是一个平滑的BRDF——如果度量 是错误的，或当查询到背面的照明时 */
         if (bRec.measure != ESolidAngle
             || Frame::cosTheta(bRec.wi) <= 0
             || Frame::cosTheta(bRec.wo) <= 0)

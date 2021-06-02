@@ -72,6 +72,7 @@ public:
      *
      * \return \c true if an intersection was found
      */
+    //指定射线与场景求交，返回是否相交
     bool rayIntersect(const Ray3f &ray, Intersection &its) const {
         return m_accel->rayIntersect(ray, its, false);
     }

@@ -616,6 +616,10 @@ double EvalSH(int l, int m, const Eigen::Vector3d& dir) {
   }
 }
 
+//该函数用来计算给定球谐阶数、投影函数、采样数下的球谐
+//系数，并返回一个 std::unique_ptr 存储的表示为 std::vector<double>
+//的球谐系数，投影函数为用户自定义的 lambda 函数，签名为 double(double,
+//    double)
 std::unique_ptr<std::vector<double>> ProjectFunction(
     int order, const SphericalFunction& func, int sample_count) {
   CHECK(order >= 0, "Order must be at least zero.");
@@ -664,6 +668,7 @@ std::unique_ptr<std::vector<double>> ProjectFunction(
   return coeffs;
 }
 
+//对于每一个像素点，通过公式可以获得一组球谐函数对应的系数
 std::unique_ptr<std::vector<Eigen::Array3f>> ProjectEnvironment(
     int order, const Image& env) {
   CHECK(order >= 0, "Order must be at least zero.");
