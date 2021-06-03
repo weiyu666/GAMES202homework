@@ -1,4 +1,4 @@
-﻿#include <nori/integrator.h>
+#include <nori/integrator.h>
 #include <nori/scene.h>
 #include <nori/ray.h>
 #include <filesystem/resolver.h>
@@ -146,8 +146,6 @@ namespace ProjEnv
 					Eigen::Array3f Le(images[i][index + 0], images[i][index + 1],
 						images[i][index + 2]);
 
-					float dw = CalcArea(x,y,width,height);
-					sumWeight += dw;
 					for (int l = 0; l <= SHOrder;++l) {
 						for (int m = -l; m <= l; ++m) {
 							int coeffIndex = sh::GetIndex(l,m);
@@ -158,12 +156,6 @@ namespace ProjEnv
 
 				}
 			}
-		}
-
-		for (int l = 0; l < SHOrder; ++l)
-		{
-			SHCoeffiecents[l] = SHCoeffiecents[l] / sumWeight;
-			SHCoeffiecents[l] = SHNum / sumWeight;
 		}
 		return SHCoeffiecents;
 		//return SHCoeffiecents;
