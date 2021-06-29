@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\GAMES202\homework4\lut-gen\build\CMakeFiles\7a568206a985988524ef370e62e52597\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4F16AF5A-C493-303F-93F8-A18027D856A6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
