@@ -48,3 +48,12 @@
 • 在实时端 (homework4 文件夹中) 通过查询预计算数据构建 BRDF 的补偿项；
 当然这都是基于PBR的！
 
+
+### homework5
+作业5实现一个简单的实时光线追踪的降噪方法。光线追踪的渲染结果，G-Buffer 及其他相关信息会以放在 http://games-cn.org/forums/topic/zuoye5fabugonggao/
+的examples文件夹中大概1.3G；这次主要是解决怎么样降噪的问题！
+作业分为三部分：
+单帧图像的降噪，计算 motion vector，累积帧间信息；
+
+
+
