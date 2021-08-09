@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\GAMES202\homework5\src\denoiser.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GAMES202\homework5\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GAMES202\homework5\src\util\image.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GAMES202\homework5\src\util\imageutil.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GAMES202\homework5\src\util\mathutil.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\GAMES202\homework5\src\denoiser.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\GAMES202\homework5\src\ext\filesystem\fwd.h">
+      <Filter>src\ext\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\GAMES202\homework5\src\ext\filesystem\path.h">
+      <Filter>src\ext\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\GAMES202\homework5\src\ext\filesystem\resolver.h">
+      <Filter>src\ext\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\GAMES202\homework5\src\ext\tinyexr\tinyexr.h">
+      <Filter>src\ext\tinyexr</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\GAMES202\homework5\src\util\buffer.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\GAMES202\homework5\src\util\common.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\GAMES202\homework5\src\util\image.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\GAMES202\homework5\src\util\imageutil.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\GAMES202\homework5\src\util\mathutil.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\GAMES202\homework5\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{2F6CDC93-B952-3B23-9179-FA263F25AA1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ext">
+      <UniqueIdentifier>{B0DE472E-A827-33CA-A4EE-4AB254BB195B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ext\filesystem">
+      <UniqueIdentifier>{CC17C70E-86F9-3639-BCC0-B60065948CA9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ext\tinyexr">
+      <UniqueIdentifier>{5065B584-DFA5-359C-AAD9-D7CA20499880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{6F15CE41-4E5F-39B2-922F-B8125708A4A8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

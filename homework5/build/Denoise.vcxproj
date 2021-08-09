@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4AC8DB23-6F72-3903-A03B-0C88BF01AA8D}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>Denoise</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\GAMES202\homework5\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Denoise.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Denoise</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\GAMES202\homework5\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Denoise.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Denoise</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\GAMES202\homework5\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Denoise.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Denoise</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\GAMES202\homework5\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Denoise.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Denoise</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\GAMES202\homework5\src;E:\GAMES202\homework5\src\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\GAMES202\homework5\src;E:\GAMES202\homework5\src\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\GAMES202\homework5\src;E:\GAMES202\homework5\src\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/GAMES202/homework5/build/Debug/Denoise.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/GAMES202/homework5/build/Debug/Denoise.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\GAMES202\homework5\src;E:\GAMES202\homework5\src\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\GAMES202\homework5\src;E:\GAMES202\homework5\src\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\GAMES202\homework5\src;E:\GAMES202\homework5\src\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/GAMES202/homework5/build/Release/Denoise.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/GAMES202/homework5/build/Release/Denoise.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\GAMES202\homework5\src;E:\GAMES202\homework5\src\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\GAMES202\homework5\src;E:\GAMES202\homework5\src\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\GAMES202\homework5\src;E:\GAMES202\homework5\src\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/GAMES202/homework5/build/MinSizeRel/Denoise.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/GAMES202/homework5/build/MinSizeRel/Denoise.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\GAMES202\homework5\src;E:\GAMES202\homework5\src\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\GAMES202\homework5\src;E:\GAMES202\homework5\src\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\GAMES202\homework5\src;E:\GAMES202\homework5\src\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/GAMES202/homework5/build/RelWithDebInfo/Denoise.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/GAMES202/homework5/build/RelWithDebInfo/Denoise.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\GAMES202\homework5\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/GAMES202/homework5/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/GAMES202/homework5 -BE:/GAMES202/homework5/build --check-stamp-file E:/GAMES202/homework5/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;D:\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;D:\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;D:\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;D:\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.20\Modules\FindOpenMP.cmake;D:\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;E:\GAMES202\homework5\build\CMakeFiles\3.20.5\CMakeCCompiler.cmake;E:\GAMES202\homework5\build\CMakeFiles\3.20.5\CMakeCXXCompiler.cmake;E:\GAMES202\homework5\build\CMakeFiles\3.20.5\CMakeRCCompiler.cmake;E:\GAMES202\homework5\build\CMakeFiles\3.20.5\CMakeSystem.cmake;E:\GAMES202\homework5\build\CMakeFiles\FindOpenMP\OpenMPCheckVersion.c;E:\GAMES202\homework5\build\CMakeFiles\FindOpenMP\OpenMPCheckVersion.cpp;E:\GAMES202\homework5\build\CMakeFiles\FindOpenMP\OpenMPTryFlag.c;E:\GAMES202\homework5\build\CMakeFiles\FindOpenMP\OpenMPTryFlag.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\GAMES202\homework5\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/GAMES202/homework5/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/GAMES202/homework5 -BE:/GAMES202/homework5/build --check-stamp-file E:/GAMES202/homework5/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;D:\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;D:\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;D:\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;D:\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.20\Modules\FindOpenMP.cmake;D:\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;E:\GAMES202\homework5\build\CMakeFiles\3.20.5\CMakeCCompiler.cmake;E:\GAMES202\homework5\build\CMakeFiles\3.20.5\CMakeCXXCompiler.cmake;E:\GAMES202\homework5\build\CMakeFiles\3.20.5\CMakeRCCompiler.cmake;E:\GAMES202\homework5\build\CMakeFiles\3.20.5\CMakeSystem.cmake;E:\GAMES202\homework5\build\CMakeFiles\FindOpenMP\OpenMPCheckVersion.c;E:\GAMES202\homework5\build\CMakeFiles\FindOpenMP\OpenMPCheckVersion.cpp;E:\GAMES202\homework5\build\CMakeFiles\FindOpenMP\OpenMPTryFlag.c;E:\GAMES202\homework5\build\CMakeFiles\FindOpenMP\OpenMPTryFlag.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\GAMES202\homework5\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/GAMES202/homework5/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/GAMES202/homework5 -BE:/GAMES202/homework5/build --check-stamp-file E:/GAMES202/homework5/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;D:\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;D:\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;D:\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;D:\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.20\Modules\FindOpenMP.cmake;D:\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;E:\GAMES202\homework5\build\CMakeFiles\3.20.5\CMakeCCompiler.cmake;E:\GAMES202\homework5\build\CMakeFiles\3.20.5\CMakeCXXCompiler.cmake;E:\GAMES202\homework5\build\CMakeFiles\3.20.5\CMakeRCCompiler.cmake;E:\GAMES202\homework5\build\CMakeFiles\3.20.5\CMakeSystem.cmake;E:\GAMES202\homework5\build\CMakeFiles\FindOpenMP\OpenMPCheckVersion.c;E:\GAMES202\homework5\build\CMakeFiles\FindOpenMP\OpenMPCheckVersion.cpp;E:\GAMES202\homework5\build\CMakeFiles\FindOpenMP\OpenMPTryFlag.c;E:\GAMES202\homework5\build\CMakeFiles\FindOpenMP\OpenMPTryFlag.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\GAMES202\homework5\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/GAMES202/homework5/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/GAMES202/homework5 -BE:/GAMES202/homework5/build --check-stamp-file E:/GAMES202/homework5/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;D:\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;D:\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;D:\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;D:\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.20\Modules\FindOpenMP.cmake;D:\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;E:\GAMES202\homework5\build\CMakeFiles\3.20.5\CMakeCCompiler.cmake;E:\GAMES202\homework5\build\CMakeFiles\3.20.5\CMakeCXXCompiler.cmake;E:\GAMES202\homework5\build\CMakeFiles\3.20.5\CMakeRCCompiler.cmake;E:\GAMES202\homework5\build\CMakeFiles\3.20.5\CMakeSystem.cmake;E:\GAMES202\homework5\build\CMakeFiles\FindOpenMP\OpenMPCheckVersion.c;E:\GAMES202\homework5\build\CMakeFiles\FindOpenMP\OpenMPCheckVersion.cpp;E:\GAMES202\homework5\build\CMakeFiles\FindOpenMP\OpenMPTryFlag.c;E:\GAMES202\homework5\build\CMakeFiles\FindOpenMP\OpenMPTryFlag.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\GAMES202\homework5\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\GAMES202\homework5\src\denoiser.cpp" />
+    <ClInclude Include="E:\GAMES202\homework5\src\denoiser.h" />
+    <ClInclude Include="E:\GAMES202\homework5\src\ext\filesystem\fwd.h" />
+    <ClInclude Include="E:\GAMES202\homework5\src\ext\filesystem\path.h" />
+    <ClInclude Include="E:\GAMES202\homework5\src\ext\filesystem\resolver.h" />
+    <ClInclude Include="E:\GAMES202\homework5\src\ext\tinyexr\tinyexr.h" />
+    <ClCompile Include="E:\GAMES202\homework5\src\main.cpp" />
+    <ClInclude Include="E:\GAMES202\homework5\src\util\buffer.h" />
+    <ClInclude Include="E:\GAMES202\homework5\src\util\common.h" />
+    <ClCompile Include="E:\GAMES202\homework5\src\util\image.cpp" />
+    <ClInclude Include="E:\GAMES202\homework5\src\util\image.h" />
+    <ClCompile Include="E:\GAMES202\homework5\src\util\imageutil.cpp" />
+    <ClInclude Include="E:\GAMES202\homework5\src\util\imageutil.h" />
+    <ClCompile Include="E:\GAMES202\homework5\src\util\mathutil.cpp" />
+    <ClInclude Include="E:\GAMES202\homework5\src\util\mathutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\GAMES202\homework5\build\ZERO_CHECK.vcxproj">
+      <Project>{E4C51AAB-89A3-3C97-A303-BA4B202577A0}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
