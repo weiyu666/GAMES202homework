@@ -29,11 +29,16 @@ Vec2f Hammersley(uint32_t i, uint32_t N) {
 
 Vec3f ImportanceSampleGGX(Vec2f Xi, Vec3f N, float roughness) {
 
-    float a = roughness * roughness;
+    float theta = atanf(roughness * roughness * sqrtf(Xi.x) / sqrtf(1.0 - Xi.x));
+    float phi = 2.0f * PI * Xi.y;
 
-    // TODO: Copy the code from your previous work - Bonus 1
+    Vec3f wi = Vec3f(sinf(theta) * cosf(phi), sinf(theta) * sinf(phi), cosf(theta));
 
-    return Vec3f(1.0f);
+    float sq = sqrtf(N.x * N.x + N.z * N.z);
+    Vec3f T = Vec3f(N.x * N.y / sq, sq, N.y * N.z / sq);
+    Vec3f B = cross(N, T);
+
+    return Vec3f(dot(T, wi), dot(B, wi), dot(N, wi));
 }
 
 
@@ -54,10 +59,10 @@ Vec3f IntegrateEmu(Vec3f V, float roughness, float NdotV, Vec3f Ei) {
         float NoV = std::max(dot(N, V), 0.0f);
 
         // TODO: To calculate Eavg here - Bonus 1
-        
+        Eavg += Ei * NoL;
     }
 
-    return Vec3f(1.0);
+    return Eavg * 2.0f / sample_count;
 }
 
 void setRGB(int x, int y, float alpha, unsigned char *data) {
@@ -92,7 +97,7 @@ int main() {
         // | 
         // | rough（i）
         // Flip it, if you want the data written to the texture
-        uint8_t data[Resolution * Resolution * 3];
+        uint8_t data[128 * 128 * 3];
         float step = 1.0 / resolution;
         Vec3f Eavg = Vec3f(0.0);
 		for (int i = 0; i < resolution; i++) 

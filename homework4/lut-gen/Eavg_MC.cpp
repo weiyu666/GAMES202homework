@@ -13,9 +13,6 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 
-#define M_PI 3.14159265358979323846
-#define Resolution 128
-
 int resolution = 128;
 int channel = 3;
 
@@ -49,7 +46,7 @@ samplePoints squareToCosineHemisphere(int sample_count){
             double sampley = (p + rng(gen)) / sample_side;
             
             double theta = 0.5f * acos(1 - 2*samplex);
-            double phi =  2 * M_PI * sampley;
+            double phi =  2 * PI * sampley;
             Vec3f wi = Vec3f(sin(theta) * cos(phi), sin(theta) * sin(phi), cos(theta));
             float pdf = wi.z / PI;
             
@@ -82,13 +79,16 @@ Vec3f IntegrateEmu(Vec3f V, float roughness, float NdotV, Vec3f Ei) {
         float NoV = std::max(dot(N, V), 0.0f);
 
         // TODO: To calculate Eavg here
-        
+        //对于之前预计算得到的 E(µ) 同理采样出射，计算出对应的 E(µ)µ，随后按 roughness 将一行的 E(µ)µ 累加除以行宽
+        // 即可，这样可以认为通过简单的均匀采样完成了 Eavg 积分的近似计算
+        Eavg +=  Ei* NoL;
+
     }
 
-    return Eavg / sample_count;
+    return Eavg * 2.0f / sample_count;
 }
 
-
+//在粗糙度低时微表面能量损失少，看到的能量多存储结果偏白；在粗糙度高时能量损失多，我们看到的能量少存储结果偏黑
 int main() {
     unsigned char *Edata = stbi_load("./GGX_E_MC_LUT.png", &resolution, &resolution, &channel, 3);
     if (Edata == NULL) 
@@ -103,7 +103,7 @@ int main() {
         // | 
         // | rough（i）
         // flip it if you want to write the data on picture 
-        uint8_t data[Resolution * Resolution * 3];
+        uint8_t data[128 * 128 * 3];
         float step = 1.0 / resolution;
         Vec3f Eavg = Vec3f(0.0);
 		for (int i = 0; i < resolution; i++) 
@@ -128,7 +128,7 @@ int main() {
 		}
 
 		stbi_flip_vertically_on_write(true);
-		stbi_write_png("GGX_Eavg_LUT.png", resolution, resolution, channel, data, 0);
+		stbi_write_png("GGX_Eavg_LUT_MC.png", resolution, resolution, channel, data, 0);
 	}
 	stbi_image_free(Edata);
     return 0;

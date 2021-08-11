@@ -23,28 +23,35 @@ Vec2f Hammersley(uint32_t i, uint32_t N) { // 0-1
     return {float(i) / float(N), rdi};
 }
 
+//NDF 将它用在Micorfacet BRDFs中用来模拟反射和折射椭球法线分布函数可以描述为将微表面通过平移进行重新放置可以覆盖上半个完整的椭球体
 Vec3f ImportanceSampleGGX(Vec2f Xi, Vec3f N, float roughness) {
     float a = roughness * roughness;
 
     //TODO: in spherical space - Bonus 1
-
+    float theta =atanf(a*sqrtf(Xi.x)/sqrtf(1.0-Xi.x)) ;
+    float phi = 2.0f * PI * Xi.y;
 
     //TODO: from spherical space to cartesian space - Bonus 1
- 
+    Vec3f wi = Vec3f(sinf(theta)*cosf(phi),sinf(theta)*sinf(phi),cosf(theta));
 
     //TODO: tangent coordinates - Bonus 1
-
+    auto sq = sqrtf(N.x*N.x+N.z*N.z);
+    Vec3f T = Vec3f(N.x * N.y / sq, sq, N.y * N.z / sq);
+    Vec3f B = cross(N,T);
 
     //TODO: transform H to tangent space - Bonus 1
-    
-    return Vec3f(1.0f);
+    return Vec3f(dot(T, wi), dot(B, wi), dot(N, wi));
 }
 
+//微表面模型中 G 项 Smith 近似模型的补充工作
 float GeometrySchlickGGX(float NdotV, float roughness) {
     // TODO: To calculate Schlick G1 here - Bonus 1
-    
-    return 1.0f;
+    float k = (roughness * roughness) / 2.0f;
+    float denom = NdotV * (1.0f-k)+k;
+
+    return NdotV/ denom;
 }
+
 
 float GeometrySmith(float roughness, float NoV, float NoL) {
     float ggx2 = GeometrySchlickGGX(NoV, roughness);
@@ -57,6 +64,7 @@ Vec3f IntegrateBRDF(Vec3f V, float roughness) {
 
     const int sample_count = 1024;
     Vec3f N = Vec3f(0.0, 0.0, 1.0);
+    float A = 0.0f;
     for (int i = 0; i < sample_count; i++) {
         Vec2f Xi = Hammersley(i, sample_count);
         Vec3f H = ImportanceSampleGGX(Xi, N, roughness);
@@ -67,14 +75,15 @@ Vec3f IntegrateBRDF(Vec3f V, float roughness) {
         float VoH = std::max(dot(V, H), 0.0f);
         float NoV = std::max(dot(N, V), 0.0f);
         
-        // TODO: To calculate (fr * ni) / p_o here - Bonus 1
-
-
+        // TODO: To calculate (fr * ni) / p_o here - Bonus 1 计算最后返回的权重
+        auto G = GeometrySmith(roughness, NoV, NoL);
+        auto  w = VoH*G/(NoV * NoH);
+        A += w;
         // Split Sum - Bonus 2
         
     }
 
-    return Vec3f(1.0f);
+    return Vec3f(1.0f - A / (float)sample_count);
 }
 
 int main() {

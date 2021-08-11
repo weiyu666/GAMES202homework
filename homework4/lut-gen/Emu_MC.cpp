@@ -75,17 +75,35 @@ float GeometrySmith(float roughness, float NoV, float NoL) {
     return ggx1 * ggx2;
 }
 
+/*
+*roughness  粗糙度
+* V 视点
+*/
 Vec3f IntegrateBRDF(Vec3f V, float roughness, float NdotV) {
     float A = 0.0;
     float B = 0.0;
     float C = 0.0;
-    const int sample_count = 1024;
+    const int sample_count = 1024;  //采样数
     Vec3f N = Vec3f(0.0, 0.0, 1.0);
     
+    //cos 加权在半球上采样入射光方向 i
     samplePoints sampleList = squareToCosineHemisphere(sample_count);
     for (int i = 0; i < sample_count; i++) {
       // TODO: To calculate (fr * ni) / p_o here
-      
+        //L 为光源
+        Vec3f L = sampleList.directions[i];
+        auto pdf = sampleList.PDFs[i];  //概率分布函数
+        //函数D： 法线分布函数(Normal Distribution Function)，其代表了所有微观角度下微小镜面法线的分布情况，
+        //粗糙表面法线分布相对均匀，光滑表面法线分布相对集中 (这种解释可能会有些抽象，后面会给出更加直观的物理上的解释)
+        auto D = DistributionGGX(N,normalize(V+L),roughness);   
+        //函数G：几何函数(Geometry Function)，描述了微平面自遮挡的属性。当一个平面相对比较粗糙的时候，
+        //平面表面上的微平面有可能挡住其他的微平面从而减少表面所反射的光线。
+        auto G = GeometrySmith(roughness,NdotV,dot(N,L));
+        //函数F：菲涅尔方程(Fresnel Rquation)，描述了物体表面在不同入射光角度下反射光线所占的比率
+        auto F = D*G/(4.0f*NdotV* pdf);
+        A += F;
+        B += F;
+        C += F;
     }
 
     return {A / sample_count, B / sample_count, C / sample_count};

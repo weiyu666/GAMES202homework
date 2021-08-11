@@ -316,15 +316,15 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="E:\GAMES202\homework4\lut-gen\Emu_MC.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="E:\GAMES202\homework4\lut-gen\build\ZERO_CHECK.vcxproj">
       <Project>{A03B3084-D96A-36D2-8C4D-CA06C942FF16}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Emu_MC.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
