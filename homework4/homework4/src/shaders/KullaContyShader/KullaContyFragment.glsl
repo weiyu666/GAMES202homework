@@ -23,27 +23,32 @@ const float PI = 3.14159265359;
 float DistributionGGX(vec3 N, vec3 H, float roughness)
 {
    // TODO: To calculate GGX NDF here
-    
+   float a2 = pow(roughness, 4.0);
+   float NdotH = clamp(dot(N, H), 0.0, 1.0);
+   float d = NdotH * NdotH * (a2 - 1.0) + 1.0;
+   return a2 / (PI * d * d);
 }
 
 float GeometrySchlickGGX(float NdotV, float roughness)
 {
     // TODO: To calculate Schlick G1 here
-    
+    NdotV = clamp(NdotV, 0.0, 1.0);
+    float k = roughness * roughness / 2.0;    
+    return NdotV / (NdotV * (1.0 - k) + k);
     return 1.0;
 }
 
 float GeometrySmith(vec3 N, vec3 V, vec3 L, float roughness)
 {
     // TODO: To calculate Smith G here
-
-    return 1.0;
+    return GeometrySchlickGGX(dot(L, N), roughness) * GeometrySchlickGGX(dot(V, N), roughness);
 }
 
 vec3 fresnelSchlick(vec3 F0, vec3 V, vec3 H)
 {
     // TODO: To calculate Schlick F here
-    return vec3(1.0);
+    float theta = clamp(dot(V, H), 0.0, 1.0);
+    return F0 + (1.0 - F0) * pow(1.0 - theta, 5.0);
 }
 
 
@@ -68,9 +73,10 @@ vec3 MultiScatterBRDF(float NdotL, float NdotV)
   vec3 F_avg = AverageFresnel(albedo, edgetint);
   
   // TODO: To calculate fms and missing energy here
+  vec3 fms = (1.0 - E_o) * (1.0 - E_i) / (PI * (1.0 - E_avg));
+  vec3 fadd = F_avg * E_avg / (1.0 - F_avg * (1.0 - E_avg));
 
-
-  return vec3(1.0);
+  return fms * fadd;
   
 }
 

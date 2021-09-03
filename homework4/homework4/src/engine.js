@@ -1,7 +1,9 @@
 var cameraPosition = [0, 80, 300];
 
 var envmap = [
-	'assets/cubemap/CornellBox'
+	'assets/cubemap/CornellBox',
+	'assets/cubemap/Indoor',
+	'assets/cubemap/GraceCathedral'
 ];
 
 var guiParams = {
@@ -97,7 +99,7 @@ async function GAMES202Main() {
 
 	let metallic = 1.0;
 	let Sphere0Transform = setTransform(180, 60, 0, 180, 180, 180, 0, Math.PI, 0);
-	//loadGLTF(renderer, 'assets/ball/', 'ball', 'KullaContyMaterial', Sphere0Transform, metallic, 0.15);
+	loadGLTF(renderer, 'assets/ball/', 'ball', 'KullaContyMaterial', Sphere0Transform, metallic, 0.15);
 	let Sphere1Transform = setTransform(100, 60, 0, 180, 180, 180, 0, Math.PI, 0);
 	loadGLTF(renderer, 'assets/ball/', 'ball', 'KullaContyMaterial', Sphere1Transform, metallic, 0.35);
 	let Sphere2Transform = setTransform(20, 60, 0, 180, 180, 180, 0, Math.PI, 0);
@@ -108,7 +110,7 @@ async function GAMES202Main() {
 	loadGLTF(renderer, 'assets/ball/', 'ball', 'KullaContyMaterial', Sphere4Transform, metallic, 0.95);
 
 	let Sphere5Transform = setTransform(180, -60, 0, 180, 180, 180, 0, Math.PI, 0);
-	//loadGLTF(renderer, 'assets/ball/', 'ball', 'PBRMaterial', Sphere5Transform, metallic, 0.15);
+	loadGLTF(renderer, 'assets/ball/', 'ball', 'PBRMaterial', Sphere5Transform, metallic, 0.15);
 	let Sphere6Transform = setTransform(100, -60, 0, 180, 180, 180, 0, Math.PI, 0);
 	loadGLTF(renderer, 'assets/ball/', 'ball', 'PBRMaterial', Sphere6Transform, metallic, 0.35);
 	let Sphere7Transform = setTransform(20, -60, 0, 180, 180, 180, 0, Math.PI, 0);
@@ -136,7 +138,7 @@ async function GAMES202Main() {
 	function createGUI() {
 		const gui = new dat.gui.GUI();
 		const panelModel = gui.addFolder('Switch Environemtn Map');
-		panelModel.add(guiParams, 'envmapId', { 'CornellBox':0}).name('Envmap Name');
+		panelModel.add(guiParams, 'envmapId', { 'CornellBox':0,'Indoor':1 ,'GraceCathedral':2},).name('Envmap Name');
 		panelModel.open();
 	}
 
