@@ -1,4 +1,4 @@
-#include <fstream>
+﻿#include <fstream>
 #include <string>
 
 #include "denoiser.h"
@@ -52,16 +52,16 @@ void Denoise(const filesystem::path &inputDir, const filesystem::path &outputDir
 
 int main() {
     // Box
-    filesystem::path inputDir("examples/box/input");
-    filesystem::path outputDir("examples/box/output");
+    filesystem::path inputDir("E:/GAMES202/examples/box/input");
+    filesystem::path outputDir("E:/GAMES202/examples/box/box-project-output");
     int frameNum = 20;
 
-    /*
+    
     // Pink room
-    filesystem::path inputDir("examples/pink-room/input");
-    filesystem::path outputDir("examples/pink-room/output");
-    int frameNum = 80;
-    */
+   /* filesystem::path inputDir("E:/GAMES202/examples/pink-room/input");
+    filesystem::path outputDir("E:/GAMES202/examples/pink-room/pinkroom-project-out");
+    int frameNum = 80;*/
+    
 
     Denoise(inputDir, outputDir, frameNum);
     return 0;
