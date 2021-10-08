@@ -15,7 +15,8 @@
 
 运行效果：
 
-![image-20211008202458180](C:\Users\陈巍瑜\AppData\Roaming\Typora\typora-user-images\image-20211008202458180.png)
+![运行效果图](https://user-images.githubusercontent.com/22174508/136559760-6b3960e5-a84b-4c88-8d44-afe45b8a5631.png)
+
 
 ------
 
@@ -25,13 +26,17 @@
 
 PCSS效果图：
 
-![PCSS_01](E:\GAMES202\hw1 submit\homework1\images\PCSS_01.png)
+![PCSS_01](https://user-images.githubusercontent.com/22174508/136558831-2e129ace-8404-422a-9d17-9c8591a13c1e.png)
+
 
 PCF:
 
-![PCF_01](E:\GAMES202\hw1 submit\homework1\images\PCF_01.png)
 
-![SM_01](E:\GAMES202\hw1 submit\homework1\images\SM_01.png)
+![PCF_01](https://user-images.githubusercontent.com/22174508/136558828-97e12088-3784-4a50-b451-3d2222136367.png)
+
+SM:
+
+![SM_02](https://user-images.githubusercontent.com/22174508/136558830-98b1e75f-6dfb-4da5-bf39-ff3fee62e596.png)
 
 ------
 
@@ -45,7 +50,8 @@ PCF:
 
 PRT球谐函数间接环境光：
 
-![、PRT_Shadowed _my](E:\GAMES202\Assignment2  submit\image\、PRT_Shadowed _my.png)
+![、PRT_Shadowed _my](https://user-images.githubusercontent.com/22174508/136558910-e8433723-85da-4f63-aa9a-397f76a69241.png)
+
 
 
 ------
@@ -58,9 +64,10 @@ PRT球谐函数间接环境光：
 
 全局光照效果图：
 
-![立方体间接光3](E:\GAMES202\homework3\image\立方体间接光3.jpg)
 
-![山谷间接光](E:\GAMES202\homework3\image\山谷间接光.jpg)
+![立方体间接光3](https://user-images.githubusercontent.com/22174508/136558945-cbc17249-42c8-4f66-8e6a-1c2e6d44d9be.jpg)
+
+![山谷间接光](https://user-images.githubusercontent.com/22174508/136558955-b07978ca-8bf7-47ce-acce-c0540b3945d9.jpg)
 
 
 ------
@@ -73,14 +80,13 @@ PRT球谐函数间接环境光：
 当然这都是基于PBR的！
 
 PBR效果图：
-
-![无补充光源](E:\GAMES202\homework4 submit\image\0812185950.png)
-
 无补充光
+![0812185950](https://user-images.githubusercontent.com/22174508/136559017-f89c8ff4-af80-47e1-81e8-1d2d2b751fa0.png)
 
-![reslut](E:\GAMES202\homework4 submit\image\reslut.png)
 
 使用Kulla-Conty BRDF 模型补偿项 
+![reslut](https://user-images.githubusercontent.com/22174508/136559037-e9b510ca-0969-403f-afa6-60097812ea30.png)
+
 
 ### homework5
 
@@ -91,9 +97,10 @@ PBR效果图：
 作业分为三部分：
 单帧图像的降噪，计算 motion vector，累积帧间信息；
 
-光追去噪效果图：![image-20211008201035367](C:\Users\陈巍瑜\AppData\Roaming\Typora\typora-user-images\image-20211008201035367.png)
+光追去噪效果图：
+![微信截图_20211008204459](https://user-images.githubusercontent.com/22174508/136559517-067527c2-1c8e-4bda-9eeb-85303b2da993.png)
 
-![image-20211008201120217](C:\Users\陈巍瑜\AppData\Roaming\Typora\typora-user-images\image-20211008201120217.png)
+![微信截图_20211008204546](https://user-images.githubusercontent.com/22174508/136559369-17a68cc2-949d-487c-85a8-aa433f175368.png)
 
 
 
