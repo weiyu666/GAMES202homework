@@ -13,11 +13,25 @@
 
 作业0主要是实现的Blinn-Phong 着色模型 ，最主要是的环境搭建测试熟悉202的框架等等；
 
+运行效果：
+
+![image-20211008202458180](C:\Users\陈巍瑜\AppData\Roaming\Typora\typora-user-images\image-20211008202458180.png)
+
 ------
 
 ### homework1
 
 作业1主要是在Blinn-Phong 着色模型基础上实现阴影，通过shadow map实现硬阴影、Soft 阴影PCF算法过滤、软硬阴影PCSS；
+
+PCSS效果图：
+
+![PCSS_01](E:\GAMES202\hw1 submit\homework1\images\PCSS_01.png)
+
+PCF:
+
+![PCF_01](E:\GAMES202\hw1 submit\homework1\images\PCF_01.png)
+
+![SM_01](E:\GAMES202\hw1 submit\homework1\images\SM_01.png)
 
 ------
 
@@ -29,6 +43,10 @@
 2、分为有阴影与无阴影的
 3、加分项旋转
 
+PRT球谐函数间接环境光：
+
+![、PRT_Shadowed _my](E:\GAMES202\Assignment2  submit\image\、PRT_Shadowed _my.png)
+
 
 ------
 
@@ -37,6 +55,12 @@
 • 实现对场景直接光照的着色 (考虑阴影)。
 • 实现屏幕空间下光线的求交 (SSR)。
 • 实现对场景间接光照的着色。
+
+全局光照效果图：
+
+![立方体间接光3](E:\GAMES202\homework3\image\立方体间接光3.jpg)
+
+![山谷间接光](E:\GAMES202\homework3\image\山谷间接光.jpg)
 
 
 ------
@@ -48,12 +72,28 @@
 • 在实时端 (homework4 文件夹中) 通过查询预计算数据构建 BRDF 的补偿项；
 当然这都是基于PBR的！
 
+PBR效果图：
+
+![无补充光源](E:\GAMES202\homework4 submit\image\0812185950.png)
+
+无补充光
+
+![reslut](E:\GAMES202\homework4 submit\image\reslut.png)
+
+使用Kulla-Conty BRDF 模型补偿项 
 
 ### homework5
+
+------
+
 作业5实现一个简单的实时光线追踪的降噪方法。光线追踪的渲染结果，G-Buffer 及其他相关信息会以放在 http://games-cn.org/forums/topic/zuoye5fabugonggao/
 的examples文件夹中大概1.3G；这次主要是解决怎么样降噪的问题！
 作业分为三部分：
 单帧图像的降噪，计算 motion vector，累积帧间信息；
+
+光追去噪效果图：![image-20211008201035367](C:\Users\陈巍瑜\AppData\Roaming\Typora\typora-user-images\image-20211008201035367.png)
+
+![image-20211008201120217](C:\Users\陈巍瑜\AppData\Roaming\Typora\typora-user-images\image-20211008201120217.png)
 
 
 
