@@ -1,13 +1,17 @@
 # GAMES202homework
 主要是学习闫老师的GAMES202高质量实时渲染完成的大作业
 
-### RenderDoc调试webgl:
+## WebGL抓帧debug
+
+
+### 方式一RenderDoc调试webgl:
 
 用到了webgl所以需要webgl抓帧调试,但是当前shader的调试暂时不支持~
 
-[RenderDoc 调试web]: https://blog.csdn.net/chenweiyu11962/article/details/115400725
+[RenderDoc 调试web]( https://blog.csdn.net/chenweiyu11962/article/details/115400725)
 
-
+### 方式二 spectorjs 抓帧:
+[spectorjs 抓帧](https://www.cnblogs.com/xyptechnology/p/13331547.html)
 
 ### homework0
 
