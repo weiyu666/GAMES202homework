@@ -133,7 +133,7 @@ float Bias(){
   // calculate bias (based on depth map resolution and slope)  vec3 lightDir = normalize(uLightPos);
   vec3 lightDir = normalize(uLightPos);
   vec3 normal = normalize(vNormal);
-  float bias = max(0.005 * (1.0 - dot(normal, lightDir)), 0.005);
+  float bias = max(0.05 * (1.0 - dot(normal, lightDir)), 0.005);
   return  bias;
 }
 
